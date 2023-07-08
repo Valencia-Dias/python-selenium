@@ -6,3 +6,7 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 # driver = webdriver.Firefox()
 driver = webdriver.Chrome(executable_path='/usr/bin/chromedriver')
 driver.get('http://demostore.supersqa.com/')
+
+print(driver.title)
+driver.quit()
+driver.close()
